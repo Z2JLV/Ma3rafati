@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرفتي</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/26b3381a72.js" crossorigin="anonymous"></script></head>
+<div class="header" id="header">
+  <a href="index.html" style="text-decoration: none;"> <span class="h1">معرفتي</span> </a>    <a href="videos.html" class="tabs" id="tabs"><span class="tabs-text-on" id="tt1"> الفيديوهات</span></a>
+    <a href="books.html" class="tabs" id="tabs"><span class="tabs-text" id="tt2"> الكتب</span></a>
+    <a href="courses.html" class="tabs" id="tabs"><span class="tabs-text" id="tt3"> الدورات</span></a>
+    <a href="tests.html" class="tabs" id="tabs"><span class="tabs-text" id="tt3"> إختبارات</span></a>
+    <button class="profile" id="profile">
+        <div class="user">
+            <img class="avatar" src="images/pngegg.png">
+            <span  class="username"> تسجيل الدخول </span>
+        </div>
+    <i class="i"></i>
+    </button>
+</div>
+<body>
+                    <!--مقاطع-->
+    <div class="videos">
+        <span class="text" style="color: black;">الفيديوهات</span>
+        <br>
+        <br>
+        <div class="videos-container">
+                            <!--فيديو-->
+            <div class="video">
+                <div class="thumbnail">                 <!--صورة العرض-->
+                <img src="images/thumbnail.png">
+                </div>
+                <div class="video-details">                 <!--تفاصيل المقطع-->
+                <div class="creater-img">
+                <img src="images/pngegg.png">
+                </div>
+                <div class="title">                 <!--عنوان المقطع-->
+                <a href="#" class="video-title">
+                 كيف تسيطر على الطلاب؟
+                </a>
+                <a href="#" class="video-creater">                 <!--صانع المحتوى-->
+                محمد 
+                </a>
+                </div>
+                </div>
+                </div> 
+
+
+                <div class="video">
+                    <div class="thumbnail">
+                    <img src="images/thumbnail.png">
+                    </div>
+                    <div class="video-details">
+                    <div class="creater-img">
+                    <img src="images/pngegg.png">
+                    </div>
+                    <div class="title"> 
+                    <a href="#" class="video-title">
+                     كيف تسيطر على الطلاب؟
+                    </a>
+                    <a href="#" class="video-creater">
+                    محمد 
+                    </a>
+                    </div>
+                    </div>
+                    </div> 
+
+
+                    <div class="video">
+                        <div class="thumbnail">
+                        <img src="images/thumbnail.png">
+                        </div>
+                        <div class="video-details">
+                        <div class="creater-img">
+                        <img src="images/pngegg.png">
+                        </div>
+                        <div class="title"> 
+                        <a href="#" class="video-title">
+                         كيف تسيطر على الطلاب؟
+                        </a>
+                        <a href="#" class="video-creater">
+                        محمد 
+                        </a>
+                        </div>
+                        </div>
+                        </div> 
+
+
+                        <div class="video">
+                            <div class="thumbnail">
+                            <img src="images/thumbnail.png">
+                            </div>
+                            <div class="video-details">
+                            <div class="creater-img">
+                            <img src="images/pngegg.png">
+                            </div>
+                            <div class="title"> 
+                            <a href="#" class="video-title">
+                             كيف تسيطر على الطلاب؟
+                            </a>
+                            <a href="#" class="video-creater">
+                            محمد 
+                            </a>
+                            </div>
+                            </div>
+                            </div> 
+        </div>
+    </div>
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="footer">
+    <span class="text">تواصل معنا</span>
+    <div class="social-media">
+        <a href="#" class="tabs" id="tabs"><i class="fa-regular fa-envelope" id="icon"></i></a>
+        <a href="#" class="tabs" id="tabs"><i class="fa-brands fa-instagram" id="icon"></i></a>
+        <a href="#" class="tabs" id="tabs"><i class="fa-solid fa-phone" id="icon"></i></a>
+        <a href="#" class="tabs" id="tabs"><i class="fa-brands fa-tiktok" id="icon"></i></a>
+        <a href="#" class="tabs" id="tabs"><i class="fa-brands fa-snapchat" id="icon"></i></a>
+
+    </div>
+</div>
+<script>
+const riseUpElements = document.querySelectorAll('.rise-up');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    } else {
+      entry.target.classList.remove('visible');
+    }
+  });
+});
+
+riseUpElements.forEach(element => {
+  observer.observe(element);
+});
+
+</script>
+</html>
