@@ -103,8 +103,8 @@ font-weight: 700;
 }
 
 .avatar {
-    height: 40px;
-    width: 40px;
+    height: 25px;
+    width: 25px;
     border: 1px black solid;
     border-radius: 45%;
     -webkit-border-radius: 45%;
@@ -581,3 +581,4 @@ align-items: center;}
 }
 
    
+
